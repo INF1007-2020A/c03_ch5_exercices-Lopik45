@@ -14,11 +14,9 @@ def use_prefixes() -> List[str]:
     prefixes, suffixes = 'JKLMNOP', 'ack'
     liste = ""
     for char in prefixes:
-        liste+= char+suffixes
-        if char!="P":
-            liste+=", "
-    liste +=" et Qack."    
-    return liste
+        liste+= char+suffixes+", "
+    liste +="Qack"
+    return '["'+liste+'"]'
 
 
 def prime_integer_summation() -> int:
