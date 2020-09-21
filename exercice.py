@@ -12,10 +12,11 @@ def convert_to_absolute() -> float:
 
 def use_prefixes() -> List[str]:
     prefixes, suffixes = 'JKLMNOP', 'ack'
-    liste = "list["
+    liste = ""
     for char in prefixes:
-        liste+= '\"'+char+suffixes+'\" '
-    liste += "]"
+        liste+= char+suffixes
+        if char!= "P":
+            liste+=", "
     return liste
 
 
