@@ -8,7 +8,18 @@ FAIL: test_prefixes (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 20, in test_prefixes
     'Mauvaise identification de la parité de la longueur de la chaine'
-AssertionError: First sequence is not a list: 'list[Jack, Kack, Lack, Mack, Nack, Oack, Pack, Qack]'
+AssertionError: Lists differ: ['Pack', 'Oack', 'Nack', 'Mack', 'Lack', 'Kack', 'Jack', 'Qack'] != ['Jack', 'Kack', 'Lack', 'Mack', 'Nack', 'Oack', 'Pack']
+
+First differing element 0:
+'Pack'
+'Jack'
+
+First list contains 1 additional elements.
+First extra element 7:
+'Qack'
+
+- ['Pack', 'Oack', 'Nack', 'Mack', 'Lack', 'Kack', 'Jack', 'Qack']
++ ['Jack', 'Kack', 'Lack', 'Mack', 'Nack', 'Oack', 'Pack'] : Mauvaise identification de la parité de la longueur de la chaine
 
 ----------------------------------------------------------------------
 Ran 3 tests in 0.002s
