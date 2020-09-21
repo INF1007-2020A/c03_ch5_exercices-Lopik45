@@ -8,7 +8,7 @@ FAIL: test_prefixes (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 20, in test_prefixes
     'Mauvaise identification de la parité de la longueur de la chaine'
-AssertionError: First sequence is not a list: 'Jack, Kack, Lack, Mack, Nack, Oack, Pack'
+AssertionError: First sequence is not a list: 'Jack, Kack, Lack, Mack, Nack, Oack, Pack et Qack.'
 
 ----------------------------------------------------------------------
 Ran 3 tests in 0.002s
