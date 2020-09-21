@@ -15,8 +15,9 @@ def use_prefixes() -> List[str]:
     liste = ""
     for char in prefixes:
         liste+= char+suffixes
-        if char!= "P":
+        if char!="P":
             liste+=", "
+    liste +=" et Qack."    
     return liste
 
 
@@ -51,6 +52,10 @@ def factorial(number: int) -> int:
 
 
 def use_continue() -> None:
+    for nb in range(1,11):
+        if nb==5:
+            continue
+        print(nb)
     pass
 
 
