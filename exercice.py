@@ -16,7 +16,7 @@ def use_prefixes() -> List[str]:
     for char in prefixes:
         liste+= char+suffixes+", "
     liste +="Qack"
-    return '["'+liste+'"]'
+    return 'list['+liste+']'
 
 
 def prime_integer_summation() -> int:
