@@ -1,26 +1,52 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
 from typing import List
 
 
 def convert_to_absolute() -> float:
-    return 0.0
-
+    nb = input("Veuiller entrer un nombre:")
+    if nb<0:
+        nb = nb*(-1)
+    return nb
 
 def use_prefixes() -> List[str]:
     prefixes, suffixes = 'JKLMNOP', 'ack'
-
-    return [""]
+    liste = "list["
+    for char in prefixes:
+        liste+= '\"'+char+suffixes+'\" '
+    liste += "]"
+    return liste
 
 
 def prime_integer_summation() -> int:
-    return 0
+    nb_pre=0
+    resultat = 0
+    nb = 2
+    premier = True
+    while nb_pre < 100:
+        b=2
+        while b <= int(nb**0.5):
+            if nb%b == 0:
+                premier = False
+                break
+            else:
+                premier = True
+            b+= 1
+        if premier == True or int(nb**0.5)==1:
+            resultat+=nb
+            nb_pre+=1
+        nb+=1
+    return resultat
 
 
 def factorial(number: int) -> int:
-    return 0
+    i=0
+    resultat=1
+    while i < number:
+        resultat = resultat*(number-i)
+        i+=1
+    return resultat
 
 
 def use_continue() -> None:
@@ -32,11 +58,11 @@ def main() -> None:
 
     print(f"La liste des noms générés avec les préfixes est: {use_prefixes()}")
 
-    print(f"La somme des nombres de 0 à 100 est: {prime_integer_summation()}")
+    print(f"La somme des 100 nombres premier est: {prime_integer_summation()}")
 
     number = 10
     print(f"La factiorelle du nombre {number} est: {factorial(number)}")
-    
+
     print(f"L'affichage de la boucle est:")
     use_continue()
 
